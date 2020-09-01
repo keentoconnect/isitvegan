@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Provider extends Model
 {
-    public function contract()
+    public function contracts()
     {
-        return $this->belongsTo(Contract::class);
+        return $this->hasMany(Contract::class);
     }
 
     /**

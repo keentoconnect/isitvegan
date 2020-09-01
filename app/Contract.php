@@ -23,8 +23,8 @@ class Contract extends Model
     /**
      * @return HasMany
      */
-    public function providers()
+    public function provider()
     {
-        return $this->hasMany(Provider::class);
+        return $this->belongsTo(Provider::class);
     }
 }
